@@ -1,5 +1,7 @@
 pragma solidity ^0.4.16;
 
+// DISCLAIMER: Below code is NOT safe as contract could be watched waiting for the unhashed password
+// to be sent, and a competing transaction with a higher gas price could be sent and mined before the original transaction
 contract BrainWallet {
 
     bytes32 public password;
